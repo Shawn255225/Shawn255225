@@ -133,3 +133,38 @@ Here are some ideas to get you started:
             background-color: #f5f5f5;
             color: #333;
         }
+ .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff2442;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .nav-links a:hover {
+            color: #ff2442;
+        }
