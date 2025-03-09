@@ -351,3 +351,35 @@
     </style>
 </head>
 <body>
+div class="container">
+        <!-- 导航栏 -->
+        <div class="navbar">
+            <div class="logo">小红书</div>
+            <div class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">关注</a>
+                <a href="#">发现</a>
+                <a href="#">消息</a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索">
+                <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);"></i>
+            </div>
+            <div class="user-icon">我</div>
+        </div>
+        
+        <!-- 内容卡片 -->
+        <div class="card-grid">
+            <!-- 卡片1 -->
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">夏日必备！冰爽绿豆沙冰棍</h3>
+                    <p class="card-description">夏天到了，来试试自己动手做冰棍吧！简单易学，健康美味～</p>
+                    <div class="card-actions">
+                        <button class="action-button"><i class="far fa-heart"></i> 128</button>
+                        <button class="action-button"><i class="far fa-comment"></i> 24</button>
+                        <button class="action-button"><i class="far fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+            </div>
