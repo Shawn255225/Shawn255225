@@ -383,3 +383,123 @@ div class="container">
                     </div>
                 </div>
             </div>
+ <!-- 卡片2 -->
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">初学者也能画的插画教程</h3>
+                    <p class="card-description">零基础学画画？从这里开始！详细步骤，轻松上手～</p>
+                    <div class="card-actions">
+                        <button class="action-button"><i class="far fa-heart"></i> 256</button>
+                        <button class="action-button"><i class="far fa-comment"></i> 38</button>
+                        <button class="action-button"><i class="far fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 卡片3 -->
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">居家必备收纳好物推荐</h3>
+                    <p class="card-description">小空间也能有大容量！这些收纳神器让你的家整洁有序～</p>
+                    <div class="card-actions">
+                        <button class="action-button"><i class="far fa-heart"></i> 342</button>
+                        <button class="action-button"><i class="far fa-comment"></i> 42</button>
+                        <button class="action-button"><i class="far fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片5 -->
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">新手友好瑜伽动作，每天10分钟</h3>
+                    <p class="card-description">办公室久坐族必看！简单瑜伽动作，缓解疲劳，塑造身材～</p>
+                    <div class="card-actions">
+                        <button class="action-button"><i class="far fa-heart"></i> 567</button>
+                        <button class="action-button"><i class="far fa-comment"></i> 78</button>
+                        <button class="action-button"><i class="far fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 卡片6 -->
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">平价好用的护肤品推荐</h3>
+                    <p class="card-description">学生党也能负担的护肤好物，效果不输大牌！</p>
+                    <div class="card-actions">
+                        <button class="action-button"><i class="far fa-heart"></i> 678</button>
+                        <button class="action-button"><i class="far fa-comment"></i> 92</button>
+                        <button class="action-button"><i class="far fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部导航 -->
+        <div class="bottom-nav">
+            <div class="bottom-nav-item">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </div>
+            <div class="bottom-nav-item">
+                <i class="fas fa-search"></i>
+                <span>搜索</span>
+            </div>
+            <div class="bottom-nav-item">
+                <i class="far fa-plus-square"></i>
+                <span>发布</span>
+            </div>
+            <div class="bottom-nav-item">
+                <i class="fas fa-bell"></i>
+                <span>消息</span>
+            </div>
+            <div class="bottom-nav-item active">
+                <i class="fas fa-user"></i>
+                <span>我</span>
+            </div>
+        </div>
+    </div>
+    !-- 模态框 -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image"></div>
+                <p class="modal-description"></p>
+            </div>
+            <div class="modal-actions">
+                <button class="action-button"><i class="far fa-heart"></i> 点赞</button>
+                <button class="action-button"><i class="far fa-comment"></i> 评论</button>
+                <button class="action-button"><i class="far fa-share-square"></i> 分享</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 卡片点击事件
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                const modal = document.getElementById('postModal');
+                const title = this.querySelector('.card-title').textContent;
+                const description = this.querySelector('.card-description').textContent;
+                
+                modal.querySelector('.modal-title').textContent = title;
+                modal.querySelector('.modal-description').textContent = description;
+                modal.style.display = 'flex';
+            });
+        });
+        
+        // 关闭模态框
+        document.querySelector('.modal-close').addEventListener('click', function() {
+            document.getElementById('postModal').style.display = 'none';
+        });
+        
+        // 点击模态框外部关闭
+
+        
